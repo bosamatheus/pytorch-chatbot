@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Robinson The Bot</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/34d37310d0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main-page">
+        <div class="main-content">
+            <div class="top-half">
+                <h2>Hello! I'm Robinson!</h2>
+                <img src="../static/images/bot.png" />
+            </div>
+            <div class="bottom-half">
+                <div class="bottom-input">
+                    <div class="output-div">
+                        <span class="bot-name">Robinson:</span> <span id="output-text">Let's chat?</span>
+                    </div>
+                    <div class="input-div">
+                        <input id="input-text" class="input-text" type="text" placeholder="Type something!"></input>
+                        <button id="send" type="button" class="pred-btn"><i class="fas fa-share"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Developed by Matheus Bosa.</p>
+    </footer>
+</body>
+
+<script src="{{ url_for('static', filename='scripts/script.js') }}"></script>
+
+</html>
